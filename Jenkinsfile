@@ -4,7 +4,7 @@ pipeline {
 		stage('Build Image') {
 			agent any
 			steps {
-				sh 'echo "Hello World"'
+				sh 'docker build -t saikumar2305/helloworld:latest'
 			}
 		}
 	}
