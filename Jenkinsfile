@@ -1,9 +1,5 @@
 pipleline{
-	agent any
-	environment {
-		registry = “saikumar2305/helloworld”
-		registryCredential = ‘dockerhub’
-	}
+	agent none
 	stages {
 		stage(‘Docker Build’) {
 			agent any
