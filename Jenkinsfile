@@ -8,5 +8,11 @@ pipeline {
 				sh 'docker tag saikumar2305/helloworld:${BUILD_NUMBER} saikumar2305/helloworld:latest'
 			}
 		}
+		stage('Deploy Image') {
+			agent any
+			steps {
+				sh 'docker push saikumar2305/helloworld:latest'
+			}
+		}
 	}
 }
