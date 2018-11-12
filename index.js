@@ -3,7 +3,7 @@ var express = require('express')
 var app = express()
 
 //Define request response in root URL (/)
-app.get('/', function (req, res) {
+app.get('/node', function (req, res) {
   res.send('Hello World D')
 })
 
